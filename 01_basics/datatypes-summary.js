@@ -35,3 +35,19 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//memory concpts
+// stack <-(primitive) and heap <-(non primitive)
+let str1="hii"
+let str2=str1;
+str2="hello"
+console.log(str1)
+console.log(str2)
+let obj1={
+    email: "abc@gmail.com",
+    mobnum: 123
+}
+let obj2=obj1;
+obj2.email="abcd@gmail.com"
+console.log(obj1.email)
+console.log(obj2.email)
